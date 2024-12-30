@@ -1,2 +1,2 @@
 // Default URL for Backend
-const backend_url = 'http://localhost:8080/';
+const backend_url = 'https://miaik-backend-production.up.railway.app/';

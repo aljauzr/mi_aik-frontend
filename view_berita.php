@@ -6,7 +6,7 @@ $id = isset($_GET['id']) ? intval($_GET['id']) : 0;
 $api_url = "/berita-galeri/$id";
 
 // Mengambil data dari API
-$response = file_get_contents("http://localhost:8080" . $api_url);
+$response = file_get_contents("https://miaik-backend-production.up.railway.app" . $api_url);
 $data = json_decode($response, true);
 
 // Jika data tidak ditemukan
