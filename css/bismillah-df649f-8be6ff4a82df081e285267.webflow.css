@@ -102,8 +102,12 @@ body {
 }
 
 .navbar {
-  background-color: var(--white);
-  box-shadow: 0 8px 10px #0003;
+  position: fixed; /* Membuat navbar tetap di atas saat scroll */
+  top: 0; /* Memastikan navbar berada di atas halaman */
+  width: 100%; /* Navbar memenuhi lebar layar */
+  z-index: 1000; /* Memberikan prioritas agar di atas elemen lain */
+  background-color: var(--white); /* Warna latar tetap */
+  box-shadow: 0 8px 10px #0003; /* Tetap gunakan bayangan yang sudah ada */
 }
 
 .image {
@@ -215,7 +219,7 @@ body {
 
 .form-pendaftaran {
   background-color: var(--orange);
-  color: #000;
+  color: #654713;
   border-radius: 10px;
 }
 
@@ -285,7 +289,7 @@ body {
   float: none;
   clear: none;
   background-color: var(--orange);
-  color: var(--black);
+  color: #654713;
   border-radius: 10px;
   padding-left: 20px;
   padding-right: 20px;
@@ -332,6 +336,15 @@ body {
   mix-blend-mode: screen;
 }
 
+.slide-3 {
+  mix-blend-mode: screen;
+}
+
+.slide-4 {
+  mix-blend-mode: screen;
+}
+
+
 .slider {
   background-color: #ddd0;
 }
@@ -360,7 +373,7 @@ body {
 
 .text-kegiatan {
   background-color: var(--orange);
-  color: var(--black);
+  color: #654713;
   text-align: center;
   border-radius: 10px;
   margin: 18px 24px 24px;
@@ -436,7 +449,7 @@ body {
 
 .text-block-2 {
   background-color: var(--orange);
-  color: var(--black);
+  color: #654713;
   max-width: 216px;
   padding: 10px;
 }
@@ -919,7 +932,7 @@ body {
 
 .heading-13 {
   background-color: var(--orange);
-  color: var(--black);
+  color: #654713;
   text-align: center;
   border-radius: 20px;
   margin-bottom: 23px;
@@ -1703,7 +1716,7 @@ body {
 
 .button-9 {
   background-color: var(--orange);
-  color: var(--black);
+  color: #654713;
   border-radius: 20px;
   margin-left: 20px;
   margin-right: 20px;
@@ -1770,7 +1783,7 @@ body {
 }
 
 .text-block-30 {
-  color: var(--black);
+  color: #654713;
   text-align: center;
   align-self: center;
   margin-top: 10px;
