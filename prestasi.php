@@ -10,7 +10,7 @@
   <!-- NAVBAR -->
   <?php include 'inc/navbar.php'; ?>
   <!-- END OF NAVBAR -->
-  <section style="margin-top: 100px;">
+  <section style="padding-top: 60px;">
     <h1 class="heading-18">Prestasi</h1>
     <div class="w-layout-blockcontainer container-13 w-container">
       <div class="w-layout-grid grid-12" id="prestasi-container">
@@ -56,18 +56,22 @@
 
           const prestasiItem = `
             <div class="w-layout-hflex">
-              <img src="${backend_url}${prestasi.gambar}" loading="lazy" width="161.38" height="161.38" alt="${prestasi.nama}" class="foto-prestasi">
+              <img src="${prestasi.gambar ? `${backend_url}${prestasi.gambar}` : `${backend_url}images/defaultPrestasi.jpg`}" 
+                   loading="lazy" 
+                   alt="${prestasi.nama}" 
+                   class="foto-prestasi" 
+                   style="aspect-ratio: 1/1; width: 161.38px; height: 161.38px;">
               <div class="w-layout-vflex flex-block-5">
                 <div class="text-block-24">${namaPrestasi}</div>
                 <div class="text-block-25">${keteranganPrestasi}</div>
-                <a href="view_prestasi.php?id=${prestasi.id}" class="button-6 w-button">Selengkapnya</a>
+                <a href="view_prestasi?id=${prestasi.id}" class="button-6 w-button">Selengkapnya</a>
               </div>
             </div>
           `;
           prestasiContainer.innerHTML += prestasiItem;
         });
 
-        // Tambahkan tombol "Lainnya" jika ada lebih dari 5 item
+        // Tambahkan tombol "Prestasi lainnya..." jika ada lebih dari 5 item
         if (data.length > maxItems) {
           const moreButtonContainer = document.createElement('div');
           moreButtonContainer.className = 'w-layout-blockcontainer container-16 w-container';
@@ -112,11 +116,15 @@
 
         const prestasiItem = `
           <div class="w-layout-hflex">
-            <img src="${backend_url}${prestasi.gambar}" loading="lazy" width="161.38" height="161.38" alt="${prestasi.nama}" class="foto-prestasi">
+            <img src="${prestasi.gambar ? `${backend_url}${prestasi.gambar}` : `${backend_url}images/defaultPrestasi.jpg`}" 
+                 loading="lazy" 
+                 alt="${prestasi.nama}" 
+                 class="foto-prestasi" 
+                 style="aspect-ratio: 1/1; width: 161.38px; height: 161.38px;">
             <div class="w-layout-vflex flex-block-5">
               <div class="text-block-24">${namaPrestasi}</div>
               <div class="text-block-25">${keteranganPrestasi}</div>
-              <a href="view_prestasi.php?id=${prestasi.id}" class="button-6 w-button">Selengkapnya</a>
+              <a href="view_prestasi?id=${prestasi.id}" class="button-6 w-button">Selengkapnya</a>
             </div>
           </div>
         `;

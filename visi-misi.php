@@ -10,7 +10,7 @@
   <!-- NAVBAR -->
   <?php include 'inc/navbar.php'; ?>
   <!-- END OF NAVBAR -->
-  <section class="section" style="margin-top: 90px;">
+  <section class="section" style="padding-top: 90px;">
     <div class="w-layout-blockcontainer container w-container">
       <div class="w-layout-grid grid-7"><img src="images/82616116logowarna-1-2.png" loading="lazy" width="350" id="w-node-_10aa9574-6b12-fa1a-74e9-b162b83265f1-c1ab8f28" alt="" srcset="images/82616116logowarna-1-2-p-500.png 500w, images/82616116logowarna-1-2.png 695w" sizes="(max-width: 479px) 198.88890075683594px, (max-width: 767px) 55vw, 350.0000305175781px" class="image-11">
         <div id="w-node-fc6b32b5-c665-ab4b-1554-f3281b8824da-c1ab8f28">

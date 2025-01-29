@@ -8,7 +8,7 @@
   <!-- NAVBAR -->
   <?php include 'inc/navbar.php'; ?>
   <!-- END OF NAVBAR -->
-  <section class="section-4 w-clearfix" style="margin-top: 60px;">
+  <section class="section-4 w-clearfix" style="padding-top: 60px;">
     <div class="w-layout-blockcontainer container-3 w-clearfix w-container">
       <img src="images/landing1-1.png" loading="lazy" width="480" height="Auto" alt="" srcset="images/landing1-1-p-500.png 500w, images/landing1-1.png 527w" sizes="(max-width: 479px) 100vw, 480px" class="image-3">
       <h4 class="heading-2">Selamat datang di<br>MI Asas Islam Kalibening</h4>
@@ -24,7 +24,7 @@
         <ul id="prestasi-list" role="list" class="list w-list-unstyled">
           <!-- Item Prestasi akan dimasukkan secara dinamis di sini -->
         </ul>
-        <a id="w-node-ea4385d1-5921-da8f-535e-751957841faa-c1ab8edd" href="prestasi.php" class="button-2 w-button">Selengkapnya</a>
+        <a id="w-node-ea4385d1-5921-da8f-535e-751957841faa-c1ab8edd" href="prestasi" class="button-2 w-button">Selengkapnya</a>
       </div>
       <img src="images/Icon-1-1.png" loading="lazy" width="434" id="w-node-c65386d2-1820-5e59-acae-5146469a85d4-c1ab8edd" alt=""/>
     </div>
@@ -37,18 +37,18 @@
           <div class="slide w-slide">
             <div class="w-row">
               <div class="w-col w-col-4">
-                <div class="div-block-2"><img src="images/2.jpg" loading="lazy" width="Auto" height="250" alt="" class="kegiatan-harian">
-                  <div class="text-kegiatan">Sholat Berjamaah</div>
+                <div class="div-block-2"><img src="images/Pagi_Mengaji.jpg" loading="lazy" width="Auto" height="250" alt="" class="kegiatan-harian">
+                  <div class="text-kegiatan">Pembiasaan Pagi Mengaji</div>
                 </div>
               </div>
               <div class="w-col w-col-4">
-                <div class="div-block-2"><img src="images/3.jpg" loading="lazy" alt="" height="250" class="kegiatan-harian">
-                  <div class="text-kegiatan">Tahlil &amp; Ziarah</div>
+                <div class="div-block-2"><img src="images/Asmaul_Husna.jpg" loading="lazy" alt="" height="250" class="kegiatan-harian">
+                  <div class="text-kegiatan">Pembiasaan Asma'ul Husna</div>
                 </div>
               </div>
               <div class="w-col w-col-4">
-                <div class="div-block-2"><img src="images/1.jpg" loading="lazy" alt="" height="250" class="kegiatan-harian">
-                  <div class="text-kegiatan">Mujahadah</div>
+                <div class="div-block-2"><img src="images/Yasin.jpg" loading="lazy" alt="" height="250" class="kegiatan-harian">
+                  <div class="text-kegiatan">Hafalan Surat Yasin</div>
                 </div>
               </div>
             </div>
@@ -56,18 +56,46 @@
           <div class="slide-2 w-slide">
             <div class="w-row">
               <div class="w-col w-col-4">
-                <div class="div-block-2"><img src="images/4.jpg" loading="lazy" width="Auto" height="250" alt="" class="kegiatan-harian">
-                  <div class="text-kegiatan">Sholat Berjamaah</div>
+                <div class="div-block-2"><img src="images/Imtaq.jpg" loading="lazy" width="Auto" height="250" alt="" class="kegiatan-harian">
+                  <div class="text-kegiatan">Friday IMTAQ</div>
                 </div>
               </div>
               <div class="w-col w-col-4">
-                <div class="div-block-2"><img src="images/5.jpg" loading="lazy" alt="" height="250" class="kegiatan-harian">
-                  <div class="text-kegiatan">Tahlil &amp; Ziarah</div>
+                <div class="div-block-2"><img src="images/Roan_together.jpeg" loading="lazy" alt="" height="250" class="kegiatan-harian">
+                  <div class="text-kegiatan">Ro'an Together</div>
                 </div>
               </div>
               <div class="w-col w-col-4">
-                <div class="div-block-2"><img src="images/6.jpg" loading="lazy" alt="" height="250" class="kegiatan-harian">
-                  <div class="text-kegiatan">Mujahadah</div>
+                <div class="div-block-2"><img src="images/Sholat_jamaah.jpg" loading="lazy" alt="" height="250" class="kegiatan-harian">
+                  <div class="text-kegiatan">Sholat Dzuhur Berjamaah</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide-3 w-slide">
+            <div class="w-row">
+              <div class="w-col w-col-4">
+                <div class="div-block-2"><img src="images/jumat_berkah.jpeg" loading="lazy" width="Auto" height="250" alt="" class="kegiatan-harian">
+                  <div class="text-kegiatan">Jum'at Berkah</div>
+                </div>
+              </div>
+              <div class="w-col w-col-4">
+                <div class="div-block-2"><img src="images/Parenting.jpg" loading="lazy" alt="" height="250" class="kegiatan-harian">
+                  <div class="text-kegiatan">Parenting</div>
+                </div>
+              </div>
+              <div class="w-col w-col-4">
+                <div class="div-block-2"><img src="images/Wasana_Warsa.jpg" loading="lazy" alt="" height="250" class="kegiatan-harian">
+                  <div class="text-kegiatan">Wasana Warsa</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide-4 w-slide">
+            <div class="w-row">
+              <div class="w-col w-col-4">
+                <div class="div-block-2"><img src="images/Akhirussanah.jpeg" loading="lazy" width="Auto" height="250" alt="" class="kegiatan-harian">
+                  <div class="text-kegiatan">Akhirussanah</div>
                 </div>
               </div>
             </div>
@@ -110,7 +138,7 @@
           <div class="text-block-2">This is some text inside of a div block.</div>
           <div id="w-node-e594e6e5-c7fd-444f-ec70-3951752132ab-c1ab8edd" class="text-block-2">This is some text inside of a div block.</div>
         </div>
-        <a href="berita-dan-galeri.html" class="button-3 w-button">Selengkapnya</a>
+        <a href="berita-dan-galeri" class="button-3 w-button">Selengkapnya</a>
       </div>
     </div>
   </section>

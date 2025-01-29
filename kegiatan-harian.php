@@ -10,7 +10,7 @@
   <!-- NAVBAR -->
   <?php include 'inc/navbar.php'; ?>
   <!-- END OF NAVBAR -->
-  <section class="section-11" style="margin-top: 60px;">
+  <section class="section-11" style=" padding-top: 60px;">
     <div class="w-layout-blockcontainer container w-container">
       <h1 class="heading-13" style="margin-bottom: -50px;">Kegiatan Harian</h1>
       <div id="kegiatan-container" class="kegiatan"></div>

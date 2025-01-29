@@ -10,7 +10,7 @@
   <!-- NAVBAR -->
   <?php include 'inc/navbar.php'; ?>
   <!-- END OF NAVBAR -->
-  <section style="margin-top: 60px;">
+  <section style="padding-top: 60px;">
     <div class="w-layout-blockcontainer container w-container">
       <h1 class="heading-20">Informasi Penerimaan<br>Peserta Didik Baru</h1>
     </div>

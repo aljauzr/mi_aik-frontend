@@ -10,7 +10,7 @@
   <!-- NAVBAR -->
   <?php include 'inc/navbar.php'; ?>
   <!-- END OF NAVBAR -->
-  <section class="section-16" style="margin-top: 60px;">
+  <section class="section-16" style="padding-top: 60px;">
     <div class="w-layout-blockcontainer w-container">
       <h1 class="heading-17">Guru dan Staf</h1>
       <div class="w-layout-grid grid-11" id="guru-container"></div>
@@ -39,14 +39,9 @@
             const guruElement = document.createElement("div");
             guruElement.classList.add("w-layout-vflex");
 
-            // Batasi nama guru hingga 23 karakter
-            const namaGuru = guru.nama.length > 23
-              ? guru.nama.substring(0, 23) + "..." 
-              : guru.nama;
-
             guruElement.innerHTML = `
-              <img src="${backend_url}${guru.gambar}" loading="lazy" alt="${guru.nama}" class="image-13" width="140" height="140">
-              <div class="text-block-22">${namaGuru}</div>
+              <img src="${guru.gambar ? `${backend_url}${guru.gambar}` : `${backend_url}images/defaultStaff.jpg`}"  loading="lazy" alt="${guru.nama}" class="image-13" width="347">
+              <div class="text-block-22">${guru.nama}</div>
               <div class="text-block-23">${guru.jabatan}</div>
             `;
 

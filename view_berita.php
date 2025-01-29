@@ -28,12 +28,12 @@ if (!$data) {
   <!-- NAVBAR -->
   <?php include 'inc/navbar.php'; ?>
   <!-- END OF NAVBAR -->
-  <section class="section-15" style="margin-top: 100px;">
+  <section class="section-15" style="padding-top: 60px;">
     <div class="w-layout-blockcontainer container w-container">
-      <a href="berita-dan-galeri.php" class="link-block-2 w-inline-block">
+      <a href="berita-dan-galeri" class="link-block-2 w-inline-block">
         <img src="images/Back_1Back.png" loading="lazy" alt="" width="30">
       </a>
-      <h2 class="heading-19"><?php echo htmlspecialchars($data['nama']); ?></h2>
+      <h2 class="heading-19" style="padding-top: 30px;"><?php echo htmlspecialchars($data['nama']); ?></h2>
       <div class="w-layout-vflex">
         <!-- Gambar dengan ID yang akan diubah oleh JavaScript -->
         <img id="prestasi-gambar" src="" loading="lazy" width="300" height="auto" alt="" class="image-14">
@@ -58,7 +58,17 @@ if (!$data) {
       const gambarElement = document.getElementById('prestasi-gambar');
       
       // Mengubah gambar dengan menggunakan backend_url dan data yang dikirimkan oleh PHP
-      gambarElement.src = backend_url + '<?php echo htmlspecialchars($data['gambar']); ?>';
+      const gambarSrc = '<?php echo htmlspecialchars($data['gambar']); ?>';
+      const img = new Image();
+      img.src = backend_url + gambarSrc;
+
+      // Cek apakah gambarSrc null atau gambar tidak ditemukan
+      img.onload = () => {
+          gambarElement.src = backend_url + gambarSrc;
+      };
+      img.onerror = () => {
+          gambarElement.src = backend_url + 'images/defaultBerita.jpg';
+      };
       
       const apiUrl = backend_url + '<?php echo $api_url; ?>';
       console.log(apiUrl);
